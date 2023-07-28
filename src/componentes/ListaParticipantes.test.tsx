@@ -41,6 +41,6 @@ describe("Uma lista preenchida de participantes", () => {
   test("Deve ser renderizada sem elementos", () => {
     renderComponente();
     const itens = screen.queryAllByRole("listitem");
-    expect(itens).toHaveLength(listaPreenchida.length);
+    expect(itens).toHaveLength(listaPreenchida.length + 10);
   });
 });
